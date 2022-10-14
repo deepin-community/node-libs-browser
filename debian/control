@@ -1,0 +1,73 @@
+Source: node-libs-browser
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-sequence-nodejs,
+ node-assert,
+ node-browserify-zlib,
+ node-buffer,
+ node-console-browserify,
+ node-constants-browserify,
+ node-crypto-browserify,
+ node-domain-browser,
+ node-events,
+ node-https-browserify,
+ node-os-browserify,
+ node-path-browserify,
+ node-process,
+ node-punycode,
+ node-querystring-es3,
+ node-readable-stream (>= 3.4.0),
+ node-stream-browserify,
+ node-stream-http,
+ node-string-decoder,
+ node-timers-browserify,
+ node-tty-browserify,
+ node-url,
+ node-util,
+ node-vm-browserify
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-libs-browser
+Vcs-Git: https://salsa.debian.org/js-team/node-libs-browser.git
+Homepage: https://github.com/webpack/node-libs-browser
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-libs-browser
+Architecture: all
+Depends:
+ ${misc:Depends},
+ node-assert,
+ node-browserify-zlib,
+ node-buffer,
+ node-console-browserify,
+ node-constants-browserify,
+ node-crypto-browserify,
+ node-domain-browser,
+ node-events,
+ node-https-browserify,
+ node-os-browserify,
+ node-path-browserify,
+ node-process,
+ node-punycode,
+ node-querystring-es3,
+ node-readable-stream (>= 3.4.0),
+ node-stream-browserify,
+ node-stream-http,
+ node-string-decoder,
+ node-timers-browserify,
+ node-tty-browserify,
+ node-url,
+ node-util,
+ node-vm-browserify
+Provides: node-node-libs-browser (= ${binary:Version})
+Description: node core libs for in browser usage
+ This library is a dependency for webpack. Webpack takes code targeted at
+ node.js and makes it run in the browser. Node.js comes with API of its own
+ that is not available in the browsers. Webpack exposes this code
+ to programs that are unaware they are running in a browser.
+ .
+ Node.js is an event-based server-side JavaScript engine.

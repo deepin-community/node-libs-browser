@@ -1,0 +1,75 @@
+node-libs-browser (2.2.1-4) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata (already
+    present in machine-readable debian/copyright).
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Yadd ]
+  * Bump debhelper compatibility level to 13
+  * Use dh-sequence-nodejs
+  * Modernize debian/watch
+    * Fix GitHub tags regex
+    * Fix filenamemangle
+  * Declare node-node-libs-browser
+  * Update standards version to 4.6.0, no changes needed.
+  * Drop dependency to nodejs
+
+ -- Yadd <yadd@debian.org>  Wed, 17 Nov 2021 09:11:50 +0100
+
+node-libs-browser (2.2.1-3) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable after successful tests
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 11 Jan 2020 09:33:09 +0100
+
+node-libs-browser (2.2.1-2) experimental; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.4.1
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Add patch for node-readable-stream ≥3.4.0
+  * Require node-readable-stream ≥ 3.4.0
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 02 Dec 2019 07:12:53 +0100
+
+node-libs-browser (2.2.1-1) unstable; urgency=medium
+
+  * New upstream version 2.2.1
+  * Bump debhelper compat to 12
+  * Bump Standards-Version to 4.4.0 (no changes needed)
+  * Switch to pkg-js-tools auto install
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 27 Aug 2019 17:59:37 +0000
+
+node-libs-browser (2.2.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 2.2.0
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+  * Clean d/install
+  * Update d/copyright
+  * Update d/control
+  * Add minimal test
+  * Add d/upstream/metadata
+
+ -- Utkarsh Gupta <guptautkarsh2102@gmail.com>  Thu, 24 Jan 2019 04:00:32 +0530
+
+node-libs-browser (2.1.0-1) unstable; urgency=medium
+
+  * New upstream version 2.1.0
+  * Fix package name in vcs link and autopkgtest
+  * Bump standards version and compat
+  * Update dependencies
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 27 Feb 2018 13:45:08 +0530
+
+node-libs-browser (2.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #865500)
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 22 Jun 2017 09:46:07 +0530
